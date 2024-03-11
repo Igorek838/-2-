@@ -1,0 +1,98 @@
+\documentclass[14pt, oneside]{altsu-report}
+
+\worktype{Курсовая работа (2 курс)}
+\title{Морской бой на C++}
+\author{И.\,О.~Шелепов}
+\groupnumber{5.205-2}
+\GradebookNumber{1337}
+\supervisor{И.\,А.~Шмаков}
+\supervisordegree{Старший преподаватель}
+\ministry{Министерство науки и высшего образования}
+\country{Российской Федерации}
+\fulluniversityname{ФГБОУ ВО Алтайский государственный университет}
+\institute{Институт цифровых технологий, электроники и физики}
+\department{Кафедра вычислительной техники и электроники}
+\departmentchief{В.\,В.~Пашнев}
+\departmentchiefdegree{к.ф.-м.н., доцент}
+\shortdepartment{ВТиЭ}
+\abstractRU{Пока счётчик работает не правильно! Поправьте количество рисунков и таблиц в cls-файле.}
+\keysRU{Курсовая работа, морской бой, объектно-ориентированное программирование}
+\keysEN{computer simulation, distributed version control}
+
+\date{\the\year}
+
+% Подключение файлов с библиотекой.
+\addbibresource{graduation-students.bib}
+
+% Пакет для отладки отступов.
+%\usepackage{showframe}
+
+\begin{document}
+\maketitle
+
+\setcounter{page}{2}
+\makeabstract
+\tableofcontents
+
+\chapter*{Введение}
+\phantomsection\addcontentsline{toc}{chapter}{ВВЕДЕНИЕ}
+
+\textbf{Актуальность}
+\newline
+Актуальность данной работы заключается в изучении объектно-ориентированного программирования с явным выделением состояний для написания игры "Морской бой". Парадигма объектно-ориентированного программирования используется повсеместно, поэтому её изучение поможет решать какие-либо нужные задачи.
+\newline
+\textbf{Цель}
+\newline
+Написать игру "Морской бой" на C++, в которой будет расширенный режим, режим игры с ботом и режим игры 1 на 1 с другим человеком.
+\newline
+\textbf{Задачи:}
+\begin{enumerate}
+\item Изучить правила игры "Морской бой";
+\item Изучить и освоить парадигму объекто-ориентированного прогрммирования;
+\item Изучить и освоить графическую библиотеку Dear ImGui;
+\item Написать "Морской бой" на C++.
+\end{enumerate}
+
+% Подключение первой главы (теория):
+\include{chapter-1-report-csae.tex}
+% Подключение второй главы (практическая часть):
+\include{chapter-2-report-csae.tex}
+% Подключение третий главы (практическая часть с тестированием:
+\include{chapter-3-report-csae.tex}
+
+\chapter{Теоретичекская часть}
+В этом разделе мы разберём суть работы, условия и задачи. Также изучим необходимые компоненты и теорию, необходимые для выыполнения работы.
+\section{Постановка задачи и условий}
+\section{Морской бой}
+\section{Язык программирования C++}
+\section{Объектно-ориентированное программирование}
+
+\chapter{Практическая часть}
+Применяя полученные знания, здесь я пошагово распишу этапы разработки игры "Морской бой"
+
+
+\chapter*{Заключение}
+\phantomsection\addcontentsline{toc}{chapter}{ЗАКЛЮЧЕНИЕ}
+
+\begin{enumerate}
+\item Пример ссылки на электронный источник~\cite{wikiC++, wikiRUООП, wikiRUImGui, wikiSeaBattle, wikiRUGeany}.
+\item Пример ссылки на книгу одного автора~\cite{book1author}.
+\item Пример ссылки на книгу 5-ти и более авторов~\cite{book5author}.
+\end{enumerate}
+
+\newpage
+\phantomsection\addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННОЙ ЛИТЕРАТУРЫ}
+\printbibliography[title={Список использованной литературы}]
+
+\appendix
+\newpage
+\chapter*{\raggedleft\label{appendix1}Приложение}
+\phantomsection\addcontentsline{toc}{chapter}{ПРИЛОЖЕНИЕ}
+%\section*{\centering\label{code:appendix}Текст программы}
+
+\begin{center}
+\label{code:appendix}Код программы "Морской бой"
+\end{center}
+
+\end{document}
+
